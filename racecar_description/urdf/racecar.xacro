@@ -33,7 +33,7 @@
   </joint>
 
   <!-- Add the left rear wheel with its joints and tranmissions -->
-
+  <!--
   <link name="left_rear_wheel">
     <inertial>
       <xacro:left_wheels_inertial_params />
@@ -56,9 +56,9 @@
   </joint>
 
   <xacro:wheel_transmission name="left_rear_wheel" />
-
+  -->
   <!-- Add the right rear wheel with its joints and tranmissions -->
-
+  <!-- 
   <link name="right_rear_wheel">
     <inertial>
       <xacro:right_wheels_inertial_params />
@@ -81,7 +81,7 @@
   </joint>
 
   <xacro:wheel_transmission name="right_rear_wheel" />
-
+  -->
   <!-- Add the left steering hinge with its joints and tranmissions -->
 
   <link name="left_steering_hinge">
@@ -127,7 +127,7 @@
   <xacro:steering_hinge_transmission name="right_steering_hinge" />
 
   <!-- Add the left front wheel with its joints and tranmissions -->
-
+  <!-- 
   <link name="left_front_wheel">
     <inertial>
       <xacro:left_wheels_inertial_params />
@@ -150,9 +150,9 @@
   </joint>
 
   <xacro:wheel_transmission name="left_front_wheel" />
-
+  -->
   <!-- Add the left front wheel with its joints and tranmissions -->
-
+  <!--
   <link name="right_front_wheel">
     <inertial>
       <xacro:right_wheels_inertial_params />
@@ -175,7 +175,7 @@
   </joint>
   
   <xacro:wheel_transmission name="right_front_wheel" />
-
+  -->
   <!-- Add Hokuyo laser scanner -->
 
   <link name="laser">
@@ -198,7 +198,7 @@
   </link>
 
   <joint name="hokuyo_joint" type="fixed">
-    <origin xyz="0.265 0.0 0.075" rpy="0 0 0"/>
+    <origin xyz="0.265 0.0 0.075" rpy="0 -0.05 0"/>
     <parent link="chassis" />
     <child link="laser" />
     <axis xyz="0 0 1" />
