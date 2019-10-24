@@ -190,9 +190,12 @@
     </collision>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
+      <transparency>1</transparency>
       <geometry>
+        <!--
         <mesh filename="package://racecar_description/meshes/hokuyo.dae"/>
-        <material name="grey" />
+        -->
+        <material>Gazebo/GreyTransparent</material>
       </geometry>
     </visual>
   </link>
